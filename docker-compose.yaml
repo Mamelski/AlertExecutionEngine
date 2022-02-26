@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  alerts-api:
+    image: quay.io/chronosphereiotest/interview-alerts-engine:latest
+    container_name: alerts_server
+    ports:
+      - "9001:9001"
+    networks:
+      - alerts-network
+  
+  alerts-monitor:
+    image: alerts-monitor:latest
+    build:
+      context: "."
+      dockerfile: "./AlertExecutionEngine.Cli/Dockerfile"
+    container_name: alerts-monitor
+    ports:
+      - "8080:8080"
+    networks:
+      - alerts-network
+    environment:
+      # Values are the same as in appsettings.json, except HttpAlertsServiceConfiguration__BaseUrl which has "alerts-api" instead of "localhost"   
+      HttpAlertsServiceConfiguration__BaseUrl: "http://alerts-api:9001/"
+      HttpAlertsServiceConfiguration__GetAllAlertsEndpointl: "alerts"
+      HttpAlertsServiceConfiguration__GetMetricEndpoint: "query"
+      HttpAlertsServiceConfiguration__NotifyEndpoint: "notify"
+      HttpAlertsServiceConfiguration__ResolveEndpoint: "resolve"
+      MonitoringEngineConfiguration__MaximumNumberOfConcurrentTasks: 7
+
+networks:
+  alerts-network:

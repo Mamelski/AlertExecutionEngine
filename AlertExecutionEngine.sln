@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlertExecutionEngine.Cli", "AlertExecutionEngine.Cli\AlertExecutionEngine.Cli.csproj", "{372A304A-1639-4D31-AA84-62378576531D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlertExecutionEngine.Domain", "AlertExecutionEngine.Domain\AlertExecutionEngine.Domain.csproj", "{68B39A0D-FA44-4D08-A6EC-F616F7158E22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlertExecutionEngine.Domain.Contracts", "AlertExecutionEngine.Domain.Contracts\AlertExecutionEngine.Domain.Contracts.csproj", "{90D3EB61-17A7-416D-8AF3-CCA1C4AD474B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlertExecutionEngine.AlertsService.Http", "AlertExecutionEngine.AlertsService.Http\AlertExecutionEngine.AlertsService.Http.csproj", "{082ADEE7-4FC3-40FF-A2BE-45890A3574E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{EF65CA29-52C8-41CA-BB9C-F3F535717E0A}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{372A304A-1639-4D31-AA84-62378576531D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372A304A-1639-4D31-AA84-62378576531D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372A304A-1639-4D31-AA84-62378576531D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372A304A-1639-4D31-AA84-62378576531D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B39A0D-FA44-4D08-A6EC-F616F7158E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B39A0D-FA44-4D08-A6EC-F616F7158E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B39A0D-FA44-4D08-A6EC-F616F7158E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B39A0D-FA44-4D08-A6EC-F616F7158E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D3EB61-17A7-416D-8AF3-CCA1C4AD474B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D3EB61-17A7-416D-8AF3-CCA1C4AD474B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D3EB61-17A7-416D-8AF3-CCA1C4AD474B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D3EB61-17A7-416D-8AF3-CCA1C4AD474B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082ADEE7-4FC3-40FF-A2BE-45890A3574E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082ADEE7-4FC3-40FF-A2BE-45890A3574E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082ADEE7-4FC3-40FF-A2BE-45890A3574E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082ADEE7-4FC3-40FF-A2BE-45890A3574E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
